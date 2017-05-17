@@ -1,0 +1,32 @@
+{
+  "name": "svg-to-html-polyfill",
+  "version": "0.1.0",
+  "homepage": "https://github.com/RaviDasari/svg-to-html-polyfill",
+  "authors": [
+    "Ravi Dasari <raviunivers@gmail.com>",
+    "Jeff Schiller <codedread@gmail.com>"
+  ],
+  "maintainers": [
+    "Ravi Dasari <raviunivers@gmail.com>",
+  ],
+  "description": "innerHTML & outerHTML polyfill for SVGElement",
+  "main": "svgtohtml.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "outerHTML",
+    "innerHTML",
+    "polyfill",
+    "SVG",
+    "SVGElement"
+  ],
+  "license": "Apache License, version 2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
