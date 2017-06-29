@@ -16,7 +16,7 @@ var serializeXML = function(node, output) {
   var nodeType = node.nodeType;
   if (nodeType == 3) { // TEXT nodes.
     // Replace special XML characters with their entities.
-    output.push(node.textContent.replace(/&/, '&amp;').replace(/</, '&lt;').replace('>', '&gt;'));
+    output.push(node.textContent.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'));
   } else if (nodeType == 1) { // ELEMENT nodes.
     // Serialize Element nodes.
     output.push('<', node.tagName);
@@ -24,7 +24,7 @@ var serializeXML = function(node, output) {
       var attrMap = node.attributes;
       for (var i = 0, len = attrMap.length; i < len; ++i) {
         var attrNode = attrMap.item(i);
-        output.push(' ', attrNode.name, '=\'', attrNode.value, '\'');
+        output.push(' ', attrNode.name, '="', attrNode.value.replace(/"/g, '&quot;'), '"');
       }
     }
     if (node.hasChildNodes()) {
