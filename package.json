@@ -1,6 +1,6 @@
 {
   "name": "svg-to-html-polyfill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "innerHTML polyfill for SVGElement",
   "main": "innersvg.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RaviDasari/svg-to-html-polyfill.git"
+    "url": "git+https://github.com/RaviDasari/svg-to-html-polyfill.git"
   },
   "keywords": [
     "innerHTML",
@@ -21,9 +21,13 @@
   ],
   "author": "Jeff Schiller <codedread@gmail.com> (https://github.com/codedread)",
   "maintainer": "Ravi Dasari <raviunivers@gmail.com> (https://github.com/RaviDasari)",
-  "license": "Apache License, version 2",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/RaviDasari/svg-to-html-polyfill/issues"
   },
-  "homepage": "https://github.com/RaviDasari/svg-to-html-polyfill"
+  "homepage": "https://github.com/RaviDasari/svg-to-html-polyfill",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {}
 }
