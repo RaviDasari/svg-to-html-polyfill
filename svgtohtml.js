@@ -24,7 +24,7 @@ var serializeXML = function(node, output) {
       var attrMap = node.attributes;
       for (var i = 0, len = attrMap.length; i < len; ++i) {
         var attrNode = attrMap.item(i);
-        output.push(' ', attrNode.name, '="', attrNode.value.replace(/"/g, '&quot;'), '"');
+        output.push(' ', attrNode.name, '="', attrNode.value.replace(/&/g, '&amp;').replace(/"/g, '&quot;'), '"');
       }
     }
     if (node.hasChildNodes()) {
