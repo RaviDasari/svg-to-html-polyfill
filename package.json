@@ -1,6 +1,6 @@
 {
   "name": "svg-to-html-polyfill",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "innerHTML polyfill for SVGElement",
   "main": "innersvg.js",
   "directories": {
